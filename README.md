@@ -9,7 +9,7 @@ Nezapomenu upravit odkazy a "aktivovat" GitHub Pages...
 
 ## ToDo
 - [x] Vytvořit repozitář projektu
-- [ ] Vytvořit Figma projekt
+- [×] Vytvořit Figma projekt
 - [ ] Aktivovat GitHub Pages
 - [ ] Upravit README.md (aktualizace odkazů na Figmu a Web)
 - [ ] Hamburger menu (s JS)
