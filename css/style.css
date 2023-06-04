@@ -1,0 +1,200 @@
+:root {
+    --background-gray: #252222;
+}
+
+@font-face {
+    font-family: KarmaBold;
+    font-weight: 800;
+    src: url(../fonts/Karma-Bold.ttf);
+}
+
+@font-face {
+    font-family: Karma;
+    font-weight: 400;
+    src: url(../fonts/Karma-Light.ttf);
+}
+
+* {
+    font-family: Karma, Calibri, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0 1em;
+
+    background-color: var(--background-gray);
+}
+
+.site--img {
+    border-radius: 6px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-family: KarmaBold;
+}
+
+p {
+    text-align: center;
+    width: 70%;
+    margin: 1em auto;
+}
+
+.header {
+    margin-top: 2em;
+}
+
+.header__heading {
+    border-bottom: 5px solid #353F77;
+    width: max-content;
+    margin-bottom: 0;
+}
+
+.header__heading a {
+    text-decoration: none;
+}
+
+.header__podheading {
+    margin-top: 10px;
+}
+
+.main {
+    padding: 5em 0;
+}
+
+.header, .oMne, .treninky, .treninky__images, .mapa, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oMne {
+    margin-bottom: 6em;
+}
+
+.oMne img {
+    margin-top: 2em;
+}
+
+.treninky__images {
+    gap: 3em;
+    margin: 4em 0;
+    flex-wrap: wrap;
+}
+
+.mapa__adresa {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.mapa {
+    margin-bottom: 6em;
+}
+
+.mapa__img {
+    width: 100%;
+}
+
+.mapa__picture {
+    width: 100%
+}
+
+.cenik ul {
+    margin: 0;
+}
+
+.footer {
+    margin-bottom: 2em;
+}
+
+.footer__link:first-of-type {
+    margin-top: 2em;
+}
+
+.footer__link {
+    width: 260px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer__link a {
+    padding-left: 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.treninky__images--galerie img {
+    width: 240px;
+}
+
+.hriste {
+    margin-bottom: 10em;
+}
+
+@media screen and (min-width: 1000px) {
+
+    body{
+        padding: 0 8em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .header__heading {
+        font-size: 3em;
+    }
+
+    .oMne {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 11em;
+    }
+
+    .oMne div {
+        width: 50%;
+    }
+
+    .oMne p {
+        width: 100%;
+    }
+
+    .treninky {
+        margin-bottom: 11em;
+    }
+
+    .treninky__images {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .treninky p {
+        width: 80%;
+    }
+
+    .mapa p:first-of-type {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .mapa__adresa {
+        font-size: 1em;
+        width: 700px;
+    }
+
+    .mapa__picture {
+        width: 700px;
+    }
+
+    .cenik__list {
+        display: flex;
+        gap: 16em;
+        justify-content: center;
+    }
+
+}

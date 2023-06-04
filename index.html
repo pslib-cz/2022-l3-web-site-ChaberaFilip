@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <title>Tento webový projekt</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <title>Trenér bez hranic</title>
 </head>
 <body>
-    <h1>My Web Page</h1>    
+    <header class="header">
+        <h1 class="header__heading"><a href="index.html">Trenér bez hranic</a></h1>
+        <h2 class="header__podheading">Filip Chabera</h2>
+    </header>
+    <main class="main">
+        <section class="oMne">
+            <div>
+                <h3>O mně</h3>
+                <p>Jmenuji se Filip Chabera a mojí vášní je fotbal, kterému se věnuji přes 10 let. Minulý rok jsem úspěšně absolvoval trenérský kurz a nyní se zaměřuji na individuální tréninky fotbalistů do 17 let.</p>
+            </div>
+            <img class="site--img" src="images/oMne.png" alt="Fotka trenéra Filipa Chabery">
+        </section>
+        <section class="treninky">
+            <h3>Co trénink zahrnuje?</h3>
+            <a href="galerie.html">Galerie fotek</a>
+            <p>Hráč přijde na hřiště s vlastními kopačkami a oblečením, trénink probíhá vždy hodinu, kde se zaměřuji na jeho slabé stránky, které je potřeba vylepšit. Celý trénink probíhá v přátelském duchu, rozcvička před i po tréninku. K dispozici jsou také šatny a sprchy, které jsou zahrnuty v ceně.</p>
+            <div class="treninky__images">
+                <img class="site--img" src="images/Trenink1.png" alt="Fotka z tréninku">
+                <img class="site--img" src="images/Trenink2.png" alt="Fotka z tréninku">
+                <img class="site--img" src="images/Trenink3.png" alt="Fotka z tréninku">
+            </div>
+        </section>
+        <section class="mapa">
+            <h3>Kde se trénuje?</h3>
+            <p>Trénink probíhá na hřišti v Ruprechticích, k dispozici je vždy 1/2 hřiště, při špatné viditelnosti je k dispozici osvětlení </p>
+            <p class="mapa__adresa">Adresa: Staškova 297/13, Ruprechtice, 460 14 Liberec</p>
+            <picture class="mapa__picture" >
+                <source media="(min-width: 1000px)" srcset="images/MapaLarger.png">
+                <img class="mapa__img" src="images/Mapa.png" alt="Fotka naší polohy (adresa výše)">
+              </picture>
+        </section>
+        <section class="cenik">
+            <h3>Ceník</h3>
+            <div class="cenik__list">
+                <ul>
+                    <li>Půjčení šaten 20Kč</li>
+                    <li>Tejpy 110Kč/ks</li>
+                    <li>Klubový vak Ruprechtic 200Kč</li>
+                </ul>
+                <ul>
+                    <li>Děti od 5-13 let 250Kč/hod</li>
+                    <li>Děti od 14-17 let 300Kč/hod</li>
+                    <li>Půjčení kopaček 100Kč/trénink</li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Kontakt</h3>
+        <p>Pro podrobné informace o tréninku a všem kolem něj, mne neváhejte kontaktovat. Jsem k dispozici každý den od 14:00-20:00.</p>
+        <div class="footer__link">
+            <img src="images/ikony/mail.svg" alt="Ikonka e-mailu">
+            <a href="mailto:chabera.filip@gmail.com">chabera.filip@gmail.com</a>
+        </div>
+        <div class="footer__link">
+            <img src="images/ikony/ig.svg" alt="Ikonka instagramu">
+            <a href="https://www.instagram.com/fchabera_">fchabera_</a>
+        </div>
+    </footer>
 </body>
 </html>
