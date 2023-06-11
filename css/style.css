@@ -181,7 +181,8 @@ p {
 }
 
 .swiper {
-    width: 30%;
+    width: 80%;
+    max-width: 400px;
 }
 
 .galerie {
@@ -285,6 +286,10 @@ p {
 
     .footer__link a {
         font-size: 2em;
+    }
+
+    .swiper { 
+        max-width: 1000px;
     }
 
 }
